@@ -28,7 +28,7 @@
       //btoa => binarytoascii (binary to base64)
       blob = new Blob([encodedData]);
 
-      downloadFile(file.name.replace('.pk', ' 커뮤니티 텍스트 파일') + ".txt", URL.createObjectURL(blob));
+      downloadFile(file.name.replace('.pk', '') + ".txt", URL.createObjectURL(blob));
     }
 
   
@@ -65,7 +65,7 @@
       var data = reader.result,
       blob = base64toBlob(data);
 
-      downloadFile(file.name.replace('.txt', ' PKM 파일') + ".pk", URL.createObjectURL(blob));
+      downloadFile(file.name.replace('.txt', '') + ".pk", URL.createObjectURL(blob));
     }
 
     reader.readAsText(file);
