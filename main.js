@@ -28,7 +28,7 @@
       //btoa => binarytoascii (binary to base64)
       blob = new Blob([encodedData]);
 
-      downloadFile(file.name.replace('.pk', '') + ".txt", URL.createObjectURL(blob));
+      downloadFile(file.name.replace('.pk', '').replace('.pk8', '').replace('.pk7', '').replace('.pk6', '').replace('.pk5', '').replace('.pk4', '').replace('.pk3', '') + ".txt", URL.createObjectURL(blob));
     }
 
   
